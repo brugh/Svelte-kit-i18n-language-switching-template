@@ -40,8 +40,8 @@
       "title": "The Phantom Menace",
       "releasedAt": "1999-05-19"
     },
-    "upVoteCount": 9,
-    "downVoteCount": 122
+    "upVoteCount": 0,
+    "downVoteCount": 1
   },
   {
     "id": 5,
@@ -51,13 +51,13 @@
       "title": "The Empire Strikes Back",
       "releasedAt": "1980-06-20"
     },
-    "upVoteCount": 97,
-    "downVoteCount": 6
+    "upVoteCount": 0,
+    "downVoteCount": 0
   },
   {
     "id": 6,
     "name": "Darth Vader",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/7/76/Darth_Vader.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Star_Wars_-_Darth_Vader.jpg",
     "firstAppearedInFilm": {
       "title": "A New Hope",
       "releasedAt": "1977-05-25"

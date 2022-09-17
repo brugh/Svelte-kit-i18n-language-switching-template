@@ -1,11 +1,12 @@
 <script>
   import VotingButton from "./UI/Button.svelte";
-
+  import { _, date } from "svelte-i18n";
   export let character;
 
   const { name, imageUrl: src, firstAppearedInFilm } = character;
 
   let { upVoteCount, downVoteCount } = character;
+  $: totalVoteCount = upVoteCount + downVoteCount;
 </script>
 
 <div class="box">
@@ -20,11 +21,11 @@
       </h3>
 
       <p class="first-appeared">
-        First appeared in
+        {$_("char.appeared")}
         <span class="first-appeared-title">
           {firstAppearedInFilm.title},
         </span>
-        {firstAppearedInFilm.releasedAt}
+        {$date(new Date(firstAppearedInFilm.releasedAt), { format: "medium" })}
       </p>
 
       <div class="buttons has-addons">
@@ -39,7 +40,12 @@
           count={downVoteCount}
           on:click={() => (downVoteCount += 1)}
         />
+        
       </div>
+      <p class="is-size-7">
+        {$_("char.total_votes", {values: {n: totalVoteCount}})}
+      </p>
+
     </div>
   </div>
 </div>
@@ -73,5 +79,9 @@
 
   .first-appeared-title {
     font-style: italic;
+  }
+
+  .buttons:not(:last-child) {
+    margin-bottom: unset;
   }
 </style>

@@ -1,0 +1,11 @@
+{
+    "app": {
+        "title": "Rebel stem-app",
+        "slogan": "Je favorite Star Wars characters"
+    },
+    "char": {
+        "appeared": "Voor het eerst verschenen in",
+        "total_votes": "{n, plural, =0 {Nog geen stemmen} =1 {# stem} other {# stemmen}}"
+    },
+    "footer": "Verwant aan een <a href=\"{phraseUrl}\">Phrase blog</a> artikel. Gemaakt met <a href=\"{svelteUrl}\">Svelte</a> &amp; <a href=\"{bulmaUrl}\">Bulma</a>."
+}
