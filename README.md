@@ -1,4 +1,3 @@
-https://phrase.com/blog/posts/a-step-by-step-guide-to-svelte-localization-with-svelte-i18n-v3/
 
 # create-svelte
 
